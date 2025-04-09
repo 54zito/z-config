@@ -15,7 +15,7 @@
   homebrew = {
     enable = true;
     brews = [
-      "mas"
+      #"mas"
     ];
     casks = [
       "google-chrome"
@@ -84,9 +84,12 @@
       "/Applications/WhatsApp.app"
       "/Applications/Slack.app"
       "${pkgs.discord}/Applications/Discord.app"
+      "/Applications/Bitwarden.app"
       "/System/Applications/System Settings.app"
     ];
-    dock.persistent-others = [ "/Users/edson/Downloads" ];
+    dock.persistent-others = [ 
+      "/Users/edson/Downloads"
+    ];
     finder.FXPreferredViewStyle = "clmv";
     NSGlobalDomain.AppleInterfaceStyle = "Dark";
     NSGlobalDomain.KeyRepeat = 2;
