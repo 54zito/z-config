@@ -10,6 +10,7 @@
     pkgs.nano
     pkgs.tmux
     pkgs.discord
+    pkgs.google-chrome
   ];
 
   homebrew = {
@@ -18,7 +19,7 @@
       #"mas"
     ];
     casks = [
-      "google-chrome"
+      
     ];
     masApps = {
       "Bitwarden" = 1352778147;
@@ -78,7 +79,7 @@
     dock.persistent-apps = [ 
       "/System/Applications/Launchpad.app"
       "/System/Applications/Utilities/Terminal.app"
-      "/Applications/Google Chrome.app"				 
+      "${pkgs.google-chrome}/Applications/Google Chrome.app"				 
       "/System/Applications/Mail.app"
       "/System/Applications/Calendar.app"
       "/Applications/WhatsApp.app"
